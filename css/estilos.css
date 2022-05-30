@@ -6,7 +6,7 @@
     display: grid;
     background-color: white;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.5fr 2.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr 3fr 0.5fr;
     grid-column-gap: 15px;
     grid-row-gap: 15px; 
     grid-template-areas: 
@@ -86,10 +86,21 @@
     grid-area: cuerpo;
     display: grid;
   }
+
   .cuerpo h1 {
     color: rgb(211, 139, 23, 0.988);
     font-size: xxx-large;
-    text-align: center; 
+    text-align: center;
+  }
+  .cuerpo:hover {
+    transform: scale(1.5,1.5);
+  }
+
+  .animate_animated {
+    --animate-duration: 2s;
+    --animate-repeat: 3;
+    --animate-delay: 2s;
+
   }
   .arriba {
     grid-area: arriba;
